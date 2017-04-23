@@ -1,0 +1,27 @@
+In clasa Server:
+- Metoda "canPublish()" verifica daca o comanda contine doar operatorii anuntati 
+in fisierul de intrare. In caz contrar, rezultatul va fi stringul "IMPOSSIBRU" 
+si se trece la urmatoarea comanda.
+- Metoda "publish()" apeleaza metoda "canPublish()" pentru a testa daca este
+o comanda valida, apoi se apeleaza metoda "toPolish()" care va returna comanda
+(data ca parametru) in forma poloneza. Dupa ce am obtinut forma poloneza, se 
+apeleaza metoda "calculatePolish()" care va calcula rezultatul comenzii in
+forma poloneza anterior determinata. Daca pe parcursul calculului se va intalni
+impartirea la 0, se va returna NULL. Altfel, se intoarce rezultatul si se adauga
+la lista rezultatelor.
+- Metoda "toPolish()" intoarce forma poloneza a comenzii primite ca parametru.
+Implementarea este conform pseudocodului din linkul primit la descrierea temei.
+- Metoda "calculatePolish()" intoarce reultatul comenzii sub forma poloneza 
+primita ca parametru sau NULL daca in timpul calculelor se intalneste impartirea
+la 0. Implementarea este conform pseudocodului din linkul primit la descrierea 
+temei.
+In clasa RomanNumber:
+- Metoda "toArabic()" calculeaza corespondentul numarului roman primit ca
+parametru in numere arabe. Algoritmul a fost preluat de pe site-ul 
+www.stackoverflow.com si adaptat problemei prezente.
+In clasa ArabicNumber:
+- Metoda "convertToRomanNumber()" transforma un numar arab in forma sa romana.
+Algoritmul este preluat de pe site-ul www.stackoverflow.com si adaptat problemei 
+prezente.
+	Celelalte metode din restul claselor sunt destul de evidente si nu necesita
+o explicatie suplimentara.
